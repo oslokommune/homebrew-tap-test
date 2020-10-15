@@ -2,16 +2,16 @@
 class Okctl < Formula
   desc "Opinionated and effortless infrastructure and application management"
   homepage "https://github.com/oslokommune/okctl"
-  version "0.0.10"
+  version "0.0.11"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/oslokommune/okctl/releases/download/v0.0.10/okctl_Darwin_amd64.tar.gz"
-    sha256 "7b933ec61fbcded04cf7c880fbca198026f0e59f7e2ee605686566905811719c"
+    url "https://github.com/oslokommune/okctl/releases/download/v0.0.11/okctl_Darwin_amd64.tar.gz"
+    sha256 "9069bd6451ca2667c61d45d638573b4eece0e4c7a7c8771a3a9efece0678f717"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/oslokommune/okctl/releases/download/v0.0.10/okctl_Linux_amd64.tar.gz"
-      sha256 "1f38aad49810afbd8aad349c363b345c973247f8a262d8fa2f06a18d8278d654"
+      url "https://github.com/oslokommune/okctl/releases/download/v0.0.11/okctl_Linux_amd64.tar.gz"
+      sha256 "b6deb113c81241538506a18c51a99bf268eca024296239a97510ff5c3b5f9eeb"
     end
   end
   

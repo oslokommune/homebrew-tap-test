@@ -2,18 +2,18 @@
 class Okctl < Formula
   desc "Opinionated and effortless infrastructure and application management"
   homepage "https://github.com/oslokommune/okctl"
-  version "0.0.23"
+  version "0.0.24"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/oslokommune/okctl/releases/download/v0.0.23/okctl_Darwin_amd64.tar.gz"
-    sha256 "e854f07c330b4673c7d81eeb15a7e9cc5ed807522c10a4a3b03f0b74a8cf6da8"
+    url "https://github.com/oslokommune/okctl/releases/download/v0.0.24/okctl_Darwin_amd64.tar.gz"
+    sha256 "a24f011b28e9e944e9e6f321a18f7aa6739f67d80db94b520bf4b2b7b10e8783"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/oslokommune/okctl/releases/download/v0.0.23/okctl_Linux_amd64.tar.gz"
-    sha256 "0149d4ae581e2f1e13500dec13c7dcb8f9c241e5e8514a631c5e5a0c04082c75"
+    url "https://github.com/oslokommune/okctl/releases/download/v0.0.24/okctl_Linux_amd64.tar.gz"
+    sha256 "f825c9b3597a1f1784b99c073e123e766068cee8c19cbd19080630618c8e6548"
   end
-  
+
   head "https://github.com/oslokommune/okctl/releases/download/latest_release/okctl_Darwin_amd64.tar.gz"
 
   def install

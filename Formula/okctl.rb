@@ -5,16 +5,21 @@
 class Okctl < Formula
   desc "Opinionated and effortless infrastructure and application management"
   homepage "https://github.com/oslokommune/okctl"
-  version "0.0.68"
+  version "0.0.71"
   bottle :unneeded
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/oslokommune/okctl/releases/download/v0.0.68/okctl_Darwin_amd64.tar.gz"
-    sha256 "aab05fe67be03b81fc07d1d0675fb36547708b707b85e90e24ed61e97adceefa"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/oslokommune/okctl/releases/download/v0.0.71/okctl_Darwin_amd64.tar.gz"
+      sha256 "d7266af7bb10dbad4757af590e146d56b151de5c5f999c8c07488993f4f750c9"
+    end
   end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/oslokommune/okctl/releases/download/v0.0.68/okctl_Linux_amd64.tar.gz"
-    sha256 "ec00af63d90539fd031515145e09c8afa625a2f0307a26b6687f756a57425ef9"
+
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/oslokommune/okctl/releases/download/v0.0.71/okctl_Linux_amd64.tar.gz"
+      sha256 "68f4ed0481c60f109983fd964d1ded896a8f3552d26187da0cf18b755355a2d5"
+    end
   end
 
   head "https://github.com/oslokommune/okctl/releases/download/latest_release/okctl_Darwin_amd64.tar.gz"
